@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.algorithon-server.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\Users\black\OneDrive\Máy tính\dotnet-algorithon\server\algorithon-server\algorithon-server\.idea\.idea.algorithon-server.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

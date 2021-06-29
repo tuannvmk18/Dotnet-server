@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>algorithon_server</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DnsClient" Version="1.4.0-beta-20200912.4" />
+      <PackageReference Include="DotNetEnv" Version="1.4.0" />
+      <PackageReference Include="IdGen" Version="3.0.0" />
+      <PackageReference Include="lodash" Version="4.17.11" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+      <PackageReference Include="MongoDB.Driver" Version="2.12.0-beta1" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+    </ItemGroup>
+
+
+</Project>
