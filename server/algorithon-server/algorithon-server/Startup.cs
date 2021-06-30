@@ -18,6 +18,7 @@ namespace algorithon_server
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,7 +29,12 @@ namespace algorithon_server
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors(options => {
+                options.AddPolicy(MyAllowSpecificOrigins, builder =>
+                {
+                    builder.WithOrigins("https://helloworld20210630071640.azurewebsites.net");
+                });
+            });
             services.AddControllers();
             
             services.Configure<AppSetting>(Configuration.GetSection("AppSettings"));

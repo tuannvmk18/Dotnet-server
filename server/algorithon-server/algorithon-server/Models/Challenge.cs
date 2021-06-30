@@ -19,7 +19,7 @@ namespace algorithon_server.Models
         }
         public string Title { get; set; }
         
-        public string ư { get; set; }
+        public string Description { get; set; }
         
         public List<string> History { get; set; }
         
